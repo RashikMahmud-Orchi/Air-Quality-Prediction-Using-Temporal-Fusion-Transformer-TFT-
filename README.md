@@ -1,5 +1,9 @@
 # Air Quality Prediction Using Temporal Fusion Transformer (TFT)  
-This project implements a deep learning model based on the Temporal Fusion Transformer (TFT) architecture to predict future air quality levels, specifically the concentration of carbon monoxide (CO) in the atmosphere. The model was trained on the Air Quality UCI dataset, containing time-series data of various atmospheric measurements, including CO, benzene, and nitrogen oxides. The main objective is to forecast CO levels 24 hours ahead, using past observations and temporal features such as day, month, and hour.  
+This project implements a deep learning model based on the Temporal Fusion Transformer (TFT) architecture to predict future air quality levels, specifically the concentration of carbon monoxide (CO) in the atmosphere.The TFT model is a state-of-the-art deep learning architecture designed for time series forecasting, which combines both sequence modeling and global temporal patterns. By leveraging historical air quality data, meteorological information, and other relevant features, the model can accurately forecast future air quality indices (AQI). The project involves preprocessing the data, training the TFT model, and evaluating its performance against other machine learning models to ensure robust and reliable predictions.  
+
+The model was trained on the Air Quality UCI dataset, containing time-series data of various atmospheric measurements, including CO, benzene, and nitrogen oxides. The main objective is to forecast CO levels 24 hours ahead, using past observations and temporal features such as day, month, and hour.    
+
+The link to the dataset: https://www.kaggle.com/datasets/rashikmahmud/airqualityuci  
 
 ## Key Features:  
 - Data Preprocessing: The dataset is cleaned by handling missing values and removing invalid readings. Continuous features are normalized and engineered, and the target variable (CO) is shifted by 24 hours for prediction.  
